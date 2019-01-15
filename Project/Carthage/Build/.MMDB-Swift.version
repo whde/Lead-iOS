@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.2.9",
+  "iOS" : [
+    {
+      "name" : "MMDB",
+      "hash" : "98beb968633f41ddb237f2ca3087d6c7db97ec031470a269794fea4d049d6e4f"
+    }
+  ]
+}

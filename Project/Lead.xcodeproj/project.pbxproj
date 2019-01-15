@@ -58,6 +58,8 @@
 		353C0FE11DDF393F00A46EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353C0FDF1DDF393F00A46EBD /* Main.storyboard */; };
 		353C0FE31DDF393F00A46EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353C0FE21DDF393F00A46EBD /* Assets.xcassets */; };
 		353C0FE61DDF393F00A46EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353C0FE41DDF393F00A46EBD /* LaunchScreen.storyboard */; };
+		4C53AD7021ED761A000D0020 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BC3D8E219DACEC00F69B39 /* NetworkExtension.framework */; };
+		4C53AD7121ED7620000D0020 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BC3D8E219DACEC00F69B39 /* NetworkExtension.framework */; };
 		DBAA2A9C9F08A662521F032B /* Pods_Lead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6271A5D1F8DA371F20ACC6C8 /* Pods_Lead.framework */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E3FB5B1DF859E0001DE158 /* Resolver.framework in Frameworks */,
+				4C53AD7121ED7620000D0020 /* NetworkExtension.framework in Frameworks */,
 				09549ADC1DDF406B000F198C /* CocoaAsyncSocket.framework in Frameworks */,
 				09549ADD1DDF406B000F198C /* CocoaLumberjack.framework in Frameworks */,
 				09549ADE1DDF406B000F198C /* CocoaLumberjackSwift.framework in Frameworks */,
@@ -199,6 +202,7 @@
 				253AF91D21A0362F005CCC41 /* SnapKit.framework in Frameworks */,
 				253AF91E21A0362F005CCC41 /* Sodium.framework in Frameworks */,
 				253AF91F21A0362F005CCC41 /* tun2socks.framework in Frameworks */,
+				4C53AD7021ED761A000D0020 /* NetworkExtension.framework in Frameworks */,
 				253AF92021A0362F005CCC41 /* Yaml.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 				TargetAttributes = {
 					09549ABE1DDF3B49000F198C = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BVU65MZFLK;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -434,6 +439,7 @@
 					};
 					353C0FD71DDF393F00A46EBD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BVU65MZFLK;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -547,7 +553,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Lead/Pods-Lead-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Lead/Pods-Lead-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
@@ -562,7 +568,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lead/Pods-Lead-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lead/Pods-Lead-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4A9CC1781F99970E006790C7 /* ShellScript */ = {
@@ -673,7 +679,7 @@
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BVU65MZFLK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -681,10 +687,10 @@
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lorenzotech.lead.packettunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DA.packet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DApacket;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.2;
@@ -700,7 +706,7 @@
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BVU65MZFLK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -708,10 +714,10 @@
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lorenzotech.lead.packettunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DA.packet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DApacket;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
@@ -841,7 +847,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BVU65MZFLK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -849,10 +855,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Lead/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lorenzotech.lead;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DA;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -868,7 +874,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BVU65MZFLK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -876,9 +882,9 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Lead/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lorenzotech.lead;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.DA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = DA;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

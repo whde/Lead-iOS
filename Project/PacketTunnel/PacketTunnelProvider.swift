@@ -95,9 +95,11 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
                     let raw_dom = dom.string!
                     let index = raw_dom.index(raw_dom.startIndex, offsetBy: 1)
                     let index2 = raw_dom.index(raw_dom.startIndex, offsetBy: 2)
-                    let typeStr = raw_dom.substring(to: index)
-                    let url = raw_dom.substring(from: index2)
-                    
+                    // let typeStr = raw_dom.substring(to: index)
+                    // let url = raw_dom.substring(from: index2)
+                    let typeStr = String(raw_dom[..<index])
+                    let url = String(raw_dom[index2...])
+
                     if typeStr == "s"{
                         rule_array.append(DomainListRule.MatchCriterion.suffix(url))
                     }else if typeStr == "k"{

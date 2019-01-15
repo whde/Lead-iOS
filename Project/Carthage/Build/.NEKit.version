@@ -1,0 +1,9 @@
+{
+  "commitish" : "79c996835d21de223f876705d2a8230ca1528a49",
+  "iOS" : [
+    {
+      "name" : "NEKit",
+      "hash" : "e594c4d1bdbd684f91f67353d50a3a6de6b07c9178e9c1a92865408c4c5f7333"
+    }
+  ]
+}
